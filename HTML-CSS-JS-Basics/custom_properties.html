@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Using custom Properties</title>
+    <style>
+        :root{
+            --my-border-color: blue;
+            --my-border-style: solid;
+            --my-border-width:3px;
+        }
+        .myClass {
+            height: 249px;
+            width: 600px;
+            background-color: palevioletred;
+            border-color: var(--my-border-color);
+            border-style: var(--my-border-style);
+            border-width: var(--my-border-width);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myClass"></div>
+</body>
+
+</html>
