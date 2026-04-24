@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attribute Selectors</title>
+    <style>
+        div>p {
+            color: green;
+            font-size: 36px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>child element</p>
+        <p>child element</p>
+        <strong>
+            <p>Not child element</p>
+        </strong>
+    </div>
+</body>
+
+</html>
